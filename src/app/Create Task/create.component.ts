@@ -5,6 +5,7 @@ import {Task} from "../task";
 @Component({
   selector: 'my-create',
   template: `<br> <br>
+<div class="container">
 <h2><strong>Add a task</strong></h2>
 <form (ngSubmit)="submit(date.value,title.value,description.value,priority.value)">
   <label>Date: </label><input type="date" class="form-control" value="{{data.date}}" #date><br>
@@ -16,7 +17,8 @@ import {Task} from "../task";
   <option value="low">Low</option>
 </select><br><br>
   <button type="submit" class="btn btn-success">Submit</button>
-</form>`,
+</form>
+</div>`,
 
   styles:[]
   ,
