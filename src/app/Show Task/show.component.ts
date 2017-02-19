@@ -5,7 +5,7 @@ import {Router} from "@angular/router";
 
 @Component({
   selector: 'my-show',
-  template: `<h1>Tasks to be Done</h1>
+  template: `<div class="container"><h1>Tasks to be Done</h1>
 <p *ngFor="let task of tasks">
 <label>Date: </label>{{task.date}}<br>
 <label>Title: </label>{{task.title}}<br>
@@ -13,7 +13,7 @@ import {Router} from "@angular/router";
 <label>Priority: </label>{{task.priority}}<br>
 <input type="button"  value="Edit" class="btn btn-primary" (click)=edit(detail)> 
 <input type="button" value="Done" class="btn btn-primary" (click)=delete(detail)><br></p>'
-
+</div>
 `,
 
 })
