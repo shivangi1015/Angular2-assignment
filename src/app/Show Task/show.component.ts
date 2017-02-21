@@ -27,9 +27,9 @@ export class ShowTaskComponent {
   }
 
   edit(detail: Task) {
-    let storeage=new TaskService;
+    let storage=new TaskService;
     TaskService.details.splice(this.tasks.indexOf(detail), 1);
-    storeage.store(detail);
+    storage.store(detail);
     this.router.navigate(['create']);
   }
 
