@@ -8,9 +8,9 @@ import {Task} from "../task";
 <div class="container">
 <h2><strong>Add a task</strong></h2>
 <form (ngSubmit)="submit(date.value,title.value,description.value,priority.value)">
-  <label>Date: </label><input type="date" class="form-control" value="{{data.date}}" #date><br>
-  <label>Title: </label><input type="text" class="form-control" #title value="{{data.title}}"><br>
-  <label>Description: </label><input type="text" class="form-control" #description value="{{data.description}}"><br>
+  <label>Date: </label><input type="date" required class="form-control" value="{{data.date}}" #date><br>
+  <label>Title: </label><input type="text" required class="form-control" #title value="{{data.title}}"><br>
+  <label>Description: </label><input type="text" required class="form-control" #description value="{{data.description}}"><br>
   <label>Priority: </label><select #priority   >
   <option value="high">High</option>
   <option value="medium">Medium</option>
